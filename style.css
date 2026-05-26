@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background: #000;
+    color: #c9a227; /* main gold */
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+/* ✨ PURE GOLD SHINE */
+@keyframes goldShine {
+    0% {
+        text-shadow: 0 0 5px #c9a227;
+    }
+    50% {
+        text-shadow: 0 0 25px #c9a227, 0 0 50px #c9a227;
+    }
+    100% {
+        text-shadow: 0 0 5px #c9a227;
+    }
+}
+
+h1 {
+    font-size: 40px;
+    color: #c9a227;
+    animation: goldShine 2s infinite alternate;
+}
+
+p {
+    font-size: 20px;
+    color: #c9a227;
+    text-shadow: 0 0 8px #8b6b14;
+}
+
+.signature {
+    margin-top: 20px;
+    color: #c9a227;
+    text-shadow: 0 0 15px #c9a227;
+}
+
+/* 🔘 BUTTON */
+button {
+    background: #8b6b14;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #c9a227;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #c9a227;
+    box-shadow: 0 0 30px #c9a227, 0 0 60px #c9a227;
+}
+
+/* 🌙 MOON */
+.moon {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #c9a227;
+    position: absolute;
+    top: 50px;
+    right: -150px;
+    box-shadow: 0 0 40px #c9a227, 0 0 80px #c9a227;
+    animation: moveMoon 20s linear infinite;
+}
+
+@keyframes moveMoon {
+    from { right: -150px; }
+    to { right: 110%; }
+}
+
+/* 🐑 SHEEP */
+.sheep {
+    width: 60px;
+    height: 60px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 50px;
+    left: -100px;
+    animation: moveSheep 15s linear infinite;
+}
+
+@keyframes moveSheep {
+    from { left: -100px; }
+    to { left: 110%; }
+}
+
+/* 🐪 CAMEL */
+.camel {
+    width: 80px;
+    height: 50px;
+    background: #6b4423;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 120px;
+    left: -150px;
+    animation: moveCamel 25s linear infinite;
+}
+
+@keyframes moveCamel {
+    from { left: -150px; }
+    to { left: 110%; }
+}
